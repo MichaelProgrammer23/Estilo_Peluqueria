@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios y Tarifas | Tu Salón de Belleza</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Contenedor para el efecto de destellos en el fondo -->
+    <div class="destellos-background">
+        <div class="destello d1"></div>
+        <div class="destello d2"></div>
+        <div class="destello d3"></div>
+        <div class="destello d4"></div>
+        <div class="destello d5"></div>
+        <div class="destello d6"></div>
+        <div class="destello d7"></div>
+        <div class="destello d8"></div>
+    </div>
+    <!-- Barra Superior Delgada de Contacto -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="top-contact">
+                <a href="tel:+56912345678">📞 Llamar: +569 1234 5678</a>
+                <a href="https://google.com" target="_blank">📍 Ubicación: Santiago, Chile</a>
+            </div>
+            <div class="top-social">
+                <a href="https://instagram.com" target="_blank">
+                    <img id="instagram_img" src="img/logo_instagram.png" class="logo_social">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img id="facebook_img" src="img/logo_facebook.png" class="logo_social">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barra de Navegación (Misma de index.html para mantener consistencia) -->
+    <header>
+        <div class="logo">Estilo & Peluquería</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                
+                <!-- Menú principal con Submenú -->
+                <li class="dropdown">
+                    <a href="servicios.html" class="dropdown-toggle">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="#peluqueria">Peluquería</a></li>
+                        <li><a href="#estetica">Estética y Belleza</a></li>
+                        <li><a href="#tratamientos">Tratamientos Capilares</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="index.html#reserva">Agenda tu Hora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Encabezado de la página de servicios -->
+    <section class="servicios-hero animar-elemento">
+        <h1>Nuestras Tarifas y Servicios</h1>
+        <p>Innovación, tradición y cuidado personalizado en el corazón de la ciudad.</p>
+    </section>
+
+    <!-- Sección 1: Peluquería & Barbería -->
+    <section id="peluqueria" class="servicio-seccion">
+        <div class="seccion-contenedor animar-elemento">
+            <h2>Peluquería & Barbería</h2>
+            <p class="seccion-subtitulo">Transforma tu estilo con cortes, coloraciones y cuidado diseñado para destacar tu personalidad.</p>
+            
+            <div class="tabla-tarifas">
+                <div class="tarifa-item">
+                    <span class="servicio-nombre">Corte de Cabello + Brushing</span>
+                    <span class="servicio-precio">$25.000</span>
+                </div>
+                <div class="tarifa-item">
+                    <span class="servicio-nombre">Coloración Completa</span>
+                    <span class="servicio-precio">$45.000</span>
+                </div>
+                <div class="tarifa-item">
+                    <span class="servicio-nombre">Mechas con Papel / Balayage</span>
+                    <span class="servicio-precio">$75.000</span>
+                </div>
+                <div class="tarifa-item">
+                    <span class="servicio-nombre">Perfilado de Barba y Cuidado</span>
+                    <span class="servicio-precio">$15.000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Estética & Belleza -->
+    <section id="estetica" class="servicio-seccion fondo-alterno">
+        <div class="seccion-contenedor">
+            <h2 class="animar-elemento">Estética & Belleza</h2>
+            <p class="seccion-subtitulo animar-elemento">Realza tu imagen con manicura profesional, depilación y servicios estéticos avanzados.</p>
+            
+            <div class="tabla-tarifas">
+                <div class="tarifa-item">
+                    <span class="servicio-nombre animar-elemento">Manicura Permanente</span>
+                    <span class="servicio-precio animar-elemento">$18.000</span>
+                </div>
+                <div class="tarifa-item">
+                    <span class="servicio-nombre animar-elemento">Pedicura Completa</span>
+                    <span class="servicio-precio animar-elemento">$22.000</span>
+                </div>
+                <div class="tarifa-item">
+                    <span class="servicio-nombre animar-elemento">Depilación Rostro Completo</span>
+                    <span class="servicio-precio animar-elemento">$12.000</span>
+                </div>
+                <div class="tarifa-item">
+                    <span class="servicio-nombre animar-elemento">Perfilado de Cejas + Henna</span>
+                    <span class="servicio-precio animar-elemento">$14.000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Tratamientos Capilares -->
+    <section id="tratamientos" class="servicio-seccion">
+        <div class="seccion-contenedor">
+            <h2 class="animar-elemento">Tratamientos Capilares</h2>
+            <p class="seccion-subtitulo animar-elemento">Devuelve la vida, brillo y fuerza a tu cabello con nuestras terapias reparadoras profundas.</p>
+            
+            <div class="tabla-tarifas">
+                <div class="tarifa-item">
+                    <span class="servicio-nombre animar-elemento">Alisado Progresivo Profesional</span>
+                    <span class="servicio-precio animar-elemento">$60.000</span>
+                </div>
+                <div class="tarifa-item">
+                    <span class="servicio-nombre animar-elemento">Hidratación Profunda de Queratina</span>
+                    <span class="servicio-precio animar-elemento">$35.000</span>
+                </div>
+                <div class="tarifa-item">
+                    <span class="servicio-nombre animar-elemento">Terapia de Reparación Intensiva</span>
+                    <span class="servicio-precio animar-elemento">$40.000</span>
+                </div>
+                <div class="tarifa-item">
+                    <span class="servicio-nombre animar-elemento">Masaje Capilar + Brushing</span>
+                    <span class="servicio-precio animar-elemento">$20.000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque de llamado a la acción final -->
+    <section class="cta-servicios">
+        <h3 class="animar-elemento">¿Listo para transformar tu estilo?</h3>
+        <p class="animar-elemento">Reserva tu cita online y selecciona el horario que mejor se acomode a ti.</p>
+        <a href="index.html#reserva" class="btn animar-elemento">Agendar mi Hora</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Estilo & Peluquería. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

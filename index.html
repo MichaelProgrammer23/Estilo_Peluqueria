@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Salón de Belleza</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Contenedor para el efecto de destellos en el fondo -->
+    <div class="destellos-background">
+        <div class="destello d1"></div>
+        <div class="destello d2"></div>
+        <div class="destello d3"></div>
+        <div class="destello d4"></div>
+        <div class="destello d5"></div>
+        <div class="destello d6"></div>
+        <div class="destello d7"></div>
+        <div class="destello d8"></div>
+    </div>
+    <!-- Barra Superior Delgada de Contacto -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="top-contact">
+                <a href="tel:+56912345678">📞 Llamar: +569 1234 5678</a>
+                <a href="https://google.com" target="_blank">📍 Ubicación: Santiago, Chile</a>
+            </div>
+            <div class="top-social">
+                <a href="https://instagram.com" target="_blank">
+                    <img id="instagram_img" src="img/logo_instagram.png" class="logo_social">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img id="facebook_img" src="img/logo_facebook.png" class="logo_social">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">Estilo & Peluquería</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                
+                <!-- Menú principal con Submenú -->
+                <li class="dropdown">
+                    <a href="servicios.html" class="dropdown-toggle">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="servicios.html#peluqueria">Peluquería</a></li>
+                        <li><a href="servicios.html#estetica">Estética y Belleza</a></li>
+                        <li><a href="servicios.html#tratamientos">Tratamientos Capilares</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="index.html#reserva">Agenda tu Hora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Eleva tu estilo personal</h1>
+        <p>Elegancia y cuidado capilar a tu medida</p>
+        <a href="#reserva" class="btn">Reservar Cita</a>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <h2 class="animar-elemento">Nuestros Servicios</h2>
+        <div class="grid-servicios">
+            <div class="servicio-card animar-elemento">Corte y Brushing</div>
+            <div class="servicio-card animar-elemento">Coloración y Balayage</div>
+            <div class="servicio-card animar-elemento">Tratamientos Capilares</div>
+        </div>
+    </section>
+
+    <section id="reserva" class="reserva-section">
+        <h2 class="animar-elemento">Agenda tu Hora</h2>
+        <form id="reservaForm">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+
+            <label for="servicio">Selecciona un Servicio:</label>
+            <select id="servicio" required>
+                <option value="Corte y Brushing">Corte y Brushing</option>
+                <option value="Coloración y Balayage">Coloración y Balayage</option>
+                <option value="Tratamientos Capilares">Tratamientos Capilares</option>
+            </select>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha-reserva" name="Fecha_Agendada" required>
+
+            <label for="hora">Hora Disponible:</label>
+            <select id="hora" required>
+                <option value="10:00">10:00 hrs</option>
+                <option value="12:00">12:00 hrs</option>
+                <option value="14:00">14:00 hrs</option>
+                <option value="16:00">16:00 hrs</option>
+                <option value="18:00">18:00 hrs</option>
+            </select>
+
+            <button type="submit" class="btn-whatsapp">Agendar por WhatsApp</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Estilo & Peluquería. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
